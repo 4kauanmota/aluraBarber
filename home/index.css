@@ -1,0 +1,166 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #dddddd;
+}
+
+header {
+    background: url(images/bg.jpg);
+    padding: 20px 0;
+}
+
+.topo {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.not-underline {
+    text-decoration: none;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+.imagem-local {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+.sobre {
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.sub-titulo, .titulo-mapa {
+    padding: 0 0 1em 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.sub-titulo-imagem {
+    margin: 0 20px 20px 0;
+    width: auto;
+    max-width: 120px;
+    float: left;
+}
+
+.sobre p {
+    padding: 0 0 1em 0;
+    font-size: 18px;
+    text-align: left;
+    color: #000000;
+}
+
+.sobre strong {
+    font-weight: bold;
+}
+
+.sobre em {
+    font-style: italic;
+}
+
+.mapa {
+    margin: 0 auto;
+    padding: 3em 0;
+    width: auto;
+}
+
+.beneficios ul {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.itens:before {
+    content: "●";
+}
+
+.itens {
+    font-style: italic;
+    line-height: 1.5em;
+    margin: 0 0 11.6% 0;
+    color: #000000;
+}
+
+.conteudo-beneficios {
+    margin: 0 auto;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.video {
+    margin: 2em auto;
+    width: 940px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    margin: 20px;
+    color: #000000;
+}
+
+@media (max-width: 940px) {
+    .topo, .mapa, .conteudo-beneficios, .sobre, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .imagem-local {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .beneficios ul {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .imagem-beneficios {
+        width: 100%;
+    }
+}
