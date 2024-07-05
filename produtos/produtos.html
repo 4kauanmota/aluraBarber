@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TXPK3GXP");
+    </script>
+    <!-- End Google Tag Manager -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="imagem/png" href="../icons/produtos.png" />
-        <title>Página de produtos</title>
-        <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="produtos.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="imagem/png" href="../icons/produtos.png" />
+    <title>Página de produtos</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="produtos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header> 
-            <div class="topo">
-                <h1><img src="images/logo-branco.png" alt="Logo da Barbearia Alura"></h1>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TXPK3GXP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-                <nav>
-                    <ul>
-                        <li><a href="../index.html" class="not-underline">HOME</a></li>
-                        <li><a href="produtos.html" id="underline">PRODUTOS</a></li>
-                        <li><a href="../contato/contato.html" class="not-underline">CONTATOS</a></li> 
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+      <div class="topo">
+        <h1>
+          <img src="images/logo-branco.png" alt="Logo da Barbearia Alura" />
+        </h1>
 
-        <main>
-            <ul class="produtos">
-                <li>
-                    <h2>Cabelo</h2>
-                    <img src="images/cabelo.jpg" class="imagens" alt="Imagem de cabelo">
-                    <p class="descricao">Na tesoura ou máquina, como o cliente preferir</p>
-                    <p class="preco">R$ 25,00</p>
-                </li>
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="not-underline">HOME</a></li>
+            <li><a href="produtos.html" id="underline">PRODUTOS</a></li>
+            <li>
+              <a href="../contato/contato.html" class="not-underline"
+                >CONTATOS</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-                <li>
-                    <h2>Barba</h2>
-                    <img src="images/barba.jpg" class="imagens" alt="Imagem de barba">
-                    <p class="descricao">Corte e desenho profissional de barba</p>
-                    <p class="preco">R$ 18,00</p>
-                </li>  
-                   
-                <li>
-                    <h2>Cabelo + Barba</h2>
-                    <img src="images/cabelo+barba.jpg" class="imagens" alt="Imagem de cabelo e barba">
-                    <p class="descricao">Pacote completo de cabelo e barba</p>
-                    <p class="preco">R$ 35,00</p>
-                </li>
-            </ul>
-        </main>
+    <main>
+      <ul class="produtos">
+        <li>
+          <h2>Cabelo</h2>
+          <img src="images/cabelo.jpg" class="imagens" alt="Imagem de cabelo" />
+          <p class="descricao">
+            Na tesoura ou máquina, como o cliente preferir
+          </p>
+          <p class="preco">R$ 25,00</p>
+        </li>
 
-        <footer>
-            <img src="images/logo.png" alt="Logo da Barbearia Alura">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        <li>
+          <h2>Barba</h2>
+          <img src="images/barba.jpg" class="imagens" alt="Imagem de barba" />
+          <p class="descricao">Corte e desenho profissional de barba</p>
+          <p class="preco">R$ 18,00</p>
+        </li>
 
-        </footer>
-    </body>
+        <li>
+          <h2>Cabelo + Barba</h2>
+          <img
+            src="images/cabelo+barba.jpg"
+            class="imagens"
+            alt="Imagem de cabelo e barba"
+          />
+          <p class="descricao">Pacote completo de cabelo e barba</p>
+          <p class="preco">R$ 35,00</p>
+        </li>
+      </ul>
+    </main>
 
+    <footer>
+      <img src="images/logo.png" alt="Logo da Barbearia Alura" />
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
+  </body>
 </html>

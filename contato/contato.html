@@ -1,101 +1,170 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TXPK3GXP");
+    </script>
+    <!-- End Google Tag Manager -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="imagem/png" href="icons/home.png" />
-        <link rel="icon" type="imagem/png" href="../icons/contato.png" />
-        <title>Página de contatos</title>
-        <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="contato.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="imagem/png" href="icons/home.png" />
+    <link rel="icon" type="imagem/png" href="../icons/contato.png" />
+    <title>Página de contatos</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header> 
-            <div class="topo">
-                <h1><img src="images/logo-branco.png" alt="Logo da Barbearia Alura"></h1>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TXPK3GXP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-                <nav>
-                    <ul>
-                        <li><a href="../index.html" class="not-underline">HOME</a></li>
-                        <li><a href="../produtos/produtos.html" class="not-underline">PRODUTOS</a></li>
-                        <li><a href="contato.html" id="underline">CONTATOS</a></li> 
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+      <div class="topo">
+        <h1>
+          <img src="images/logo-branco.png" alt="Logo da Barbearia Alura" />
+        </h1>
 
-        <main>
-            <form>
-                <div>
-                    <label for="nome" class="infos">Nome</label>
-                    <input type="text" class="input-padrao" required placeholder="Ex: Kauan Soares Mota">
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="not-underline">HOME</a></li>
+            <li>
+              <a href="../produtos/produtos.html" class="not-underline"
+                >PRODUTOS</a
+              >
+            </li>
+            <li><a href="contato.html" id="underline">CONTATOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-                    <label for="email" class="infos">Email</label>
-                    <input type="email" class="input-padrao" required placeholder="Ex: xxxxxxx@gmail.com">
+    <main>
+      <form>
+        <div>
+          <label for="nome" class="infos">Nome</label>
+          <input
+            type="text"
+            class="input-padrao"
+            required
+            placeholder="Ex: Kauan Soares Mota"
+          />
 
-                    <label for="telefone" class="infos">Telefone</label>
-                    <input type="tel" class="input-padrao" required placeholder="Ex: (xx) x xxxx-xxxx">   
+          <label for="email" class="infos">Email</label>
+          <input
+            type="email"
+            class="input-padrao"
+            required
+            placeholder="Ex: xxxxxxx@gmail.com"
+          />
 
-                    <label for="mensagem" class="infos">Mensagem</label>
-                    <textarea cols="60" rows="10" class="input-padrao" required></textarea>
-                </div>
-                <fieldset class="input">
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email" class="forma-de-contato"><input type="radio" name="contato" value="email">Email</label>
-                    
-                    <label for="radio-telefone" class="forma-de-contato"><input type="radio" name="contato" value="telefone">Telefone</label>
-                    
-                    <label for="radio-whatsapp" class="forma-de-contato"><input type="radio" name="contato" value="whatsapp" checked>Whatsapp</label>
+          <label for="telefone" class="infos">Telefone</label>
+          <input
+            type="tel"
+            class="input-padrao"
+            required
+            placeholder="Ex: (xx) x xxxx-xxxx"
+          />
 
-                </fieldset>
+          <label for="mensagem" class="infos">Mensagem</label>
+          <textarea
+            cols="60"
+            rows="10"
+            class="input-padrao"
+            required
+          ></textarea>
+        </div>
+        <fieldset class="input">
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email" class="forma-de-contato"
+            ><input type="radio" name="contato" value="email" />Email</label
+          >
 
-                <fieldset class="horarios">
-                    <legend>Qual horario prefere ser atendido?</legend>
-                    <select>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
-                </fieldset>
+          <label for="radio-telefone" class="forma-de-contato"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+            />Telefone</label
+          >
 
-                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+          <label for="radio-whatsapp" class="forma-de-contato"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              checked
+            />Whatsapp</label
+          >
+        </fieldset>
 
-                <input type="submit" value="Enviar" class="enviar">
+        <fieldset class="horarios">
+          <legend>Qual horario prefere ser atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
 
-            </form>
+        <label class="checkbox"
+          ><input type="checkbox" checked />Gostaria de receber nossas novidades
+          por email?</label
+        >
 
-			<table>
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-					</tr>
-				</thead>
-                
-                <tbody>
-                    <tr>
-                        <td>Segunda</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                </tbody>
-			</table>
-        </main>
+        <input type="submit" value="Enviar" class="enviar" />
+      </form>
 
-        <footer>
-            <img src="images/logo.png" alt="Logo da Barbearia Alura">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
-        </footer>
-    </body>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <img src="images/logo.png" alt="Logo da Barbearia Alura" />
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
+  </body>
 </html>
